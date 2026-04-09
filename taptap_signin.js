@@ -15,7 +15,7 @@
 // 【圈X 定时任务配置】
 //   [task_local]
 //   ; 每天早上 8:30 执行（可自行修改时间）
-//   30 8 * * * https://raw.githubusercontent.com/ala-stone/QuantumultX/refs/heads/main/taptap_signin.js, tag=TapTap签到, img-url=https://raw.githubusercontent.com/ala-stone/QuantumultX/refs/heads/main/icon/favicon.ico, enabled=true
+//   30 8 * * * https://raw.githubusercontent.com/ala-stone/QuantumultX/refs/heads/main/taptap_signin.js, tag=TapTap签到, img-url=https://raw.githubusercontent.com/ala-stone/QuantumultX/refs/heads/main/icon/taptap.png, enabled=true
 //
 // 【圈X 重写规则（配合 Cookie 插件）】
 //   ^https?:\/\/www\.taptap\.cn\/webapiv2\/ url script-request-header taptap_cookie.js
