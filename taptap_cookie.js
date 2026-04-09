@@ -22,7 +22,7 @@
 //   5. 之后定时任务签到脚本会自动读取保存好的 Cookie
 //
 // 【圈X 重写规则】
-//   ^https?:\/\/www\.taptap\.cn\/webapiv2\/ url script-request-header taptap_cookie.js
+//   ^https?:\/\/www\.taptap\.cn\/webapiv2\/ url script-request-header https://raw.githubusercontent.com/ala-stone/QuantumultX/refs/heads/main/taptap_cookie.js
 //
 // 【MitM 域名】
 //   hostname = www.taptap.cn
