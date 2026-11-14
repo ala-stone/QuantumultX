@@ -5,7 +5,7 @@
 //        可选清理红果自有 API 响应里的广告字段。
 //
 //  [rewrite_local]
-//    ^https?:\/\/[^\/]+pangolin-sdk-toutiao[^\/]*\/api\/ad\/union\/sdk\/ url script-response-body <本脚本URL>
+//    ^https?:\/\/[^\/]+pangolin-sdk-toutiao[^\/]*\/api\/ad\/union\/sdk\/ url script-response-body https://raw.githubusercontent.com/ala-stone/QuantumultX/refs/heads/main/hongguo-ad.js
 //
 //  [mitm]
 //    hostname = *.pangolin-sdk-toutiao.com, *.pangolin-sdk-toutiao-b.com, *.pangolin-sdk-toutiao1.com
