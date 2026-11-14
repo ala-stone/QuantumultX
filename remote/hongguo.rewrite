@@ -1,0 +1,13 @@
+# 红果短剧去广告 · QX rewrite_remote 规则集
+# 订阅：[rewrite_remote] 里加
+#   https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/remote/hongguo.rewrite, tag=红果短剧, enabled=true
+#
+# ⚠️ QX 的 rewrite_remote 不会自动注入 MITM hostname，
+#    脚本版必须手动把下面这行加进 profile 的 [mitm] 段：
+#    hostname = *.pangolin-sdk-toutiao.com, *.pangolin-sdk-toutiao-b.com, *.pangolin-sdk-toutiao1.com
+
+# 纯规则版（零依赖）：返回空 JSON {}
+^https?:\/\/[^\/]+pangolin-sdk-toutiao[^\/]*\/api\/ad\/union\/sdk\/ url reject-dict
+
+# 脚本版（需要把 hongguo-ad.js 托管后替换地址，并注释掉上面一行）
+# ^https?:\/\/[^\/]+pangolin-sdk-toutiao[^\/]*\/api\/ad\/union\/sdk\/ url script-response-body https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/hongguo-ad.js
